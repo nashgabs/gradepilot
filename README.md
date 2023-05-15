@@ -14,7 +14,7 @@ To create a new term:
 2. Add your assignments to this term as you would usually. 
 
 <aside>
->💡See the “Adding new items” section in this guide.
+💡***See the “Adding new items” section in this guide***.
 
 </aside>
 
