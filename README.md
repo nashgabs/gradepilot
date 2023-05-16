@@ -16,37 +16,38 @@ To create a new term:
 
 >:bulb:__See the '[Adding new items](#adding-new-items)' section in this guide__.
 
-1. Open the page titled **Grade Calculator**. To the right of the table headings select the plus symbol + and click on the property type _Relation_. Select the page you just created in Step 1 (e.g. “Term 3”) then click _Add relation_ and _Done_.
-2. _Duplicate_ the property named _T2 selected modules_ and rename it appropriately, e.g. “T3 selected modules”.
+3. Open the page titled **Grade Calculator**. To the right of the table headings select the plus symbol + and click on the property type _Relation_. Select the page you just created in Step 1 (e.g. “Term 3”) then click _Add relation_ and _Done_.
+4. _Duplicate_ the property named _T2 selected modules_ and rename it appropriately, e.g. “T3 selected modules”.
      * _Edit property_ then select _Relation_ and change this to _Term 3_ (for example).
      * Select *Property* and change this to *Module*.
-     * Select _Calculate_ and change this to _Show unique values_.
-4. _Duplicate_ the property named _Sum of weights in T2_ and rename it.
+     * Select _Calculate_ and change this to _Show original_.
+5. _Duplicate_ the property named _Sum of weights in T2_ and rename it.
      * _Edit property_ then select _Relation_ and change this to _Term 3_ (for example).
      * Select *Property* and change this to *Weight*.
      * Select _Calculate_ and change this to _Sum_.
-5. _Duplicate_ the property named _Weighted grade total in T3_ and rename it.
+6. _Duplicate_ the property named _Weighted grade total in T3_ and rename it.
      * _Edit property_ then select _Relation_ and change this to _Term 3_ (for example).
      * Select *Property* and change this to *Weighted grade*.
      * Select _Calculate_ and change this to _Sum_.
-6. _Duplicate_ the property named _Grade for T2_, rename appropriately and then update its formula with the newly created property names.
+7. _Duplicate_ the property named _Grade for T2_, rename appropriately and then update its formula with the newly created property names.
 
 > :bulb:__The original formula should look like this.__
- ```jsx
- round(prop("Weighted grade total in T2") * 1 / prop("Sum of weights in T2"))
- ```
+>
+>  ```jsx
+>  round(prop("Weighted grade total in T2") * 1 / prop("Sum of weights in T2"))
+>  ```
 > **After editing, the formula should look something like this.**
-
- ```jsx
- round(prop("Weighted grade total in T3") * 1 / prop("Sum of weights in T3"))
- ```
-7. Update the formula in the property _Completion_ by inserting
+>
+> ```jsx
+> round(prop("Weighted grade total in T3") * 1 / prop("Sum of weights in T3"))
+> ```
+8. Update the formula in the property _Completion_ by inserting
   ```jsx
   + prop("Sum of weights in T3")
   ```
   after the _Sum of weights in T2_.
 
-8. Finally, update the formula for _Overall Grade_ by inserting 
+9. Finally, update the formula for _Overall Grade_ by inserting 
   ```jsx
   + prop("Weighted grade total in T3")
   ```
@@ -54,20 +55,56 @@ To create a new term:
 </details>
 <details>
   <summary> How can I update the Grade Calculator with a new item? </summary>
+  
+Once your work has been marked, you can add it to the _Grade Calculator_ by clicking in the _Term 1_ or _Term 2_ field and linking the assignment.
+
+> :bulb: __Example__
+>
+> You have just received your grade for the assignment 'Video Presentation' in _Term 1_ and you have updated the mark in the _Raw grade_ field:
+> ![](../main/Update_grade_calculator_1.png)
+>
+> To add it to the _Grade Calculator_, you open _Module 1_ and add a link to _Video Presentation_ in the _Term 1_ field:
+> ![](../main/Update_grade_calculator_2.png)
+>
+  
 </details>
 
 <details>
   <summary> Some of my assignments have the same name (e.g. ‘Portfolio’), how can I tell which is the correct one in the Grade Calculator?</summary>
+
+Use the _Selected Modules_ properties to see the module assigned to each assignment. Since the modules appear in the order that they are linked to the calculator you should be able to link all of them and remove the ones which have the wrong module name assigned to them.
+
+> :bulb: __Example__
+>
+> You have just received your grade for two Video Presentations in Term 2, one in Module 1 and the other in Module 2. You link both pages in the Term 2 field and look to the Selected Modules properties to determine their module names.
+> ![](../main/Select_correct_module_1.png)
+>
+
 </details>
 
 <details>
   <summary> I have an extension on an item, can I still enter the correct submission date? </summary>
+
+Yes, if you would like to forgive any late penalty on an item then check the box Excuse lateness?. This way you can keep track of which items have an extension and which ones do not.
 </details>
 
 <details>
-  <summary> It seems like there is a lot of information to provide, are any of the assignment details optional?</summary>
+  <summary> It seems like there is a lot of information to provide, are any of the assignment details optional? </summary>
+
+When creating a new item, there are only three essential details to complete for the calculator to work.
+
+The required fields are:
+
+- Assignment
+- Module
+- Weight
+
+This tool works best when you input all of the information, though. The ability to track other details such as completion status or time remaining will help you to contextualise your progress and reinforce good study habits.
+
 </details>
 
 <details>
   <summary> What if I don’t know how my items are weighted? Or, what if my items all count equally?</summary>
+
+This tool still works for you if you don’t know the exact weights by providing you with a mean average of your performance. To do this, simply set the weights to all of the assignments to 100%.
 </details>
