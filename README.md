@@ -1,8 +1,26 @@
-# Help and advice
+# :bulb: Help and advice
 
 ## Adding new items
+To create a new assignment you can choose from one of the pre-made templates or make your own.
 
-## FAQs
+First, go to the *Term 1* or *Term 2* page, select one of the module views or the _Overview_ and click on the blue **New** button to make your own assignment, or you can click on the dropdown box :arrow_down_small: next to this to select a template.
+
+Next, fill out all of the editable fields:
+
+- Assignment
+- Module
+- Release date
+- Deadline
+- Weight
+- Late penalty
+- Status
+- Memo (for any additional notes you’d like to record)
+
+You can change the completion status of items by dragging them into the categories in the _Overview_ panel, or manually change the status by opening the item and clicking on the _Status_ field.
+
+To update an item’s marked grade, simply enter a value in the _Raw grade_ field and press Enter.
+
+## :question: FAQs
 
 <details>
   <summary> What if I need to add an extra term?</summary>
